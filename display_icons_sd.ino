@@ -4,8 +4,6 @@
 #include <SPI.h>             // SPI library
 #include <TouchScreen.h>
 
-
-
 #define YP A1  // Analog pin
 #define XM A2  // Analog pin
 #define YM 7   // Digital pin, configured as analog input
@@ -101,7 +99,7 @@ void setup() {
   }
 
   tft.begin(identifier);
-  tft.setRotation(-1); // Adjust rotation if necessary
+  tft.setRotation(-1);
 
   // Initialize SD card
   if (!SD.begin(SD_CS_PIN)) { // SD card is connected to pin 10
@@ -109,27 +107,6 @@ void setup() {
     return;
   }
   Serial.println("SD card initialized.");
-
-  // 6 sep files 128*128px
-  // const char* bmpFiles[6] = {"A1.BMP", "A1.BMP", "A1.BMP", "A1.BMP", "A1.BMP", "A1.BMP"};
-
-  // // Coordinates for icons
-  // int16_t positions[6][2] = {
-  //   {0, 8}, {176, 8}, {352, 8},
-  //   {0, 184}, {176, 184}, {352, 184}
-  // };
-
-  // Draw each BMP file
-  // for (int i = 0; i < 6; i++) {
-  //   File bmpFile = SD.open(bmpFiles[i]);
-  //   if (!bmpFile) {
-  //     Serial.print("Failed to open BMP file: ");
-  //     Serial.println(bmpFiles[i]);
-  //     continue;
-  //   }
-  //   displayBMP(bmpFile, positions[i][0], positions[i][1]);
-  //   bmpFile.close();
-  // }
   
   // 1 whole file 480*320px
     File bmpFile = SD.open("A2.BMP");
@@ -143,9 +120,7 @@ void setup() {
     Serial.println("All BMP files displayed.");
   }
 
-
 void loop() {
-  // Nothing to do here
   TSPoint p = ts.getPoint();
 
   // Only read if touch is detected
@@ -154,12 +129,10 @@ void loop() {
     p.x = map(p.x, TS_MINX, TS_MAXX, 0, tft.height());
     p.y = map(p.y, TS_MINY, TS_MAXY, 0, tft.width());
 
-    // Print touch coordinates
     Serial.print("X = "); Serial.print(p.y);
     Serial.print("\tY = "); Serial.print(p.x);
     Serial.print("\tPressure = "); Serial.println(p.z);
-    // Draw a small circle at the touch point
   }
 
-  delay(100); // Add a small delay to prevent excessive serial output
+  delay(100);
 }
