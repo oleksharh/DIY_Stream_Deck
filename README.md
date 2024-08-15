@@ -1,3 +1,3 @@
 ## DIY STREAM DECK
 
-Leonardo board, doesn;t work sd card, even with ICSP pins connected smh.
+Leonardo board doesn't work with sd card reader, even with ICSP pins connected smh.
