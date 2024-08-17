@@ -38,6 +38,10 @@ The **DIY Stream Deck** project is a customizable and versatile macros keyboard 
 - **For Power and Data Transfer**
   - A USB-C cable to power the device and manage data transfer between the keyboard and the computer.
 
+### **9. Additional Tool**
+- **Soldering Iron**
+  - Oh, and don’t forget to have an iron to be able to assemble everything together into the whole piece.
+
 ## Features
 
 - **Customizable Macros:** Set up and manage macros with multiple profiles for different applications.
