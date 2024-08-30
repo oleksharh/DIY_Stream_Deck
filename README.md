@@ -11,7 +11,7 @@ The **DIY Stream Deck** project is a customizable and versatile macros keyboard 
   - A powerful microcontroller with Wi-Fi and Bluetooth capabilities for handling user inputs, controlling displays, and managing macros.
 
 ### **2. Touchscreen**
-- **3.5-inch TFT LCD Touchscreen (Resistive)**
+- **3.5-inch TFT LCD Touchscreen (Resistive) with SPI connection protocol**
   - A 3.5-inch touchscreen for user interaction, macro display, and system status monitoring.
 
 ### **3. Custom PCB**
