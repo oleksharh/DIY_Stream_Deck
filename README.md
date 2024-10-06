@@ -26,7 +26,7 @@ The **DIY Stream Deck** project is a customizable and versatile macros keyboard 
 - **EC11 or KY040 (360 degrees)**
   - A rotary encoder for precise input control, allowing for smooth scrolling and adjustments.
 
-### **6. [Housing](https://makerworld.com/en/models/646335#profileId-572580)**
+### **6. [Housing](https://makerworld.com/en/models/642040#profileId-567982)**
 - **Follow the link to download stl files**
 
 ### **7. Plexiglass**
